@@ -14,7 +14,11 @@
 }
 
 .container {
-    margin-top: 80px;
+  margin-top: 80px;
+}
+
+.content {
+  margin: 30px;
 }
 
 .row {
