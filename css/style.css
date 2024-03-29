@@ -1,0 +1,70 @@
+:root {
+  --first-color: blueviolet;
+  --secondary-color: rgb(54, 54, 245);
+  --white-color: white;
+  --grey-color: rgb(95, 94, 94);
+  --black-color: black;
+  --font-first: "Playfair Display", serif;
+  --font-second: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.row {
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+h1 {
+  font-family: var(--font-first);
+  font-size: 64px !important;
+  line-height: 80px;
+}
+
+h2 {
+  font-family: var(--font-second);
+  font-size: 24px !important;
+}
+
+p {
+  font-family: var(--font-second);
+  color: var(--grey-color);
+  font-size: 14px;
+}
+
+.btn-style {
+  background-color: var(--first-color) !important;
+  color: var(--white-color) !important;
+  font-family: var(--font-second) !important;
+  padding: 15px !important;
+}
+
+.btn-style:hover {
+  background-color: rgb(130, 70, 199) !important;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 30px !important;
+  }
+
+  h2 {
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 12px !important;
+  }
+
+  .btn-style {
+    padding: 10px !important;
+  }
+}
