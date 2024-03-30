@@ -6,11 +6,22 @@
   --black-color: black;
   --font-first: "Playfair Display", serif;
   --font-second: "Poppins", sans-serif;
+  --nav-color: rgba(223, 159, 247, 0.8);
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+#nav {
+  font-family: var(--font-second) !important;
+  font-size: 14px !important;
+  background: var(--nav-color) !important;
+}
+
+.nav-link {
+  color: white !important;
 }
 
 .container {
@@ -74,8 +85,9 @@ p {
 }
 
 .contact-link {
-  background-color: rgb(206, 203, 203);
   padding: 30px 15px;
+  background-color: var(--nav-color);
+  border-radius: 5px;
   border: 1px solid white;
 }
 
@@ -96,4 +108,105 @@ i {
   .contact-link a {
     font-size: 14px;
   }
+}
+
+.hero {
+  text-align: center;
+  background-color: #f9f7fe;
+  padding: 160px 20px;
+}
+
+.hero h1 {
+  font-family: var(--font-first);
+  font-weight: 800 !important;
+  font-size: 96px;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--font-second);
+}
+
+.hero h2 {
+  font-size: 24px;
+  line-height: 2;
+  font-family: var(--font-second);
+}
+
+.btn-contact {
+  background: var(--first-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-button {
+  color: var(--first-color);
+  border: 1px solid var(--first-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+.btn-button:hover {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.description {
+  padding: 120px 60px;
+}
+
+h3 {
+  font-family: var(--font-first);
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 50px !important;
+  }
+
+  .hero p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 780px) {
+  .display-none {
+    display: none;
+  }
+
+  .description {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 990px) {
+  .description {
+    padding: 0px;
+  }
+}
+
+.container-tec {
+  background-color: #f9f7fe;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.row-content {
+  max-width: 500px;
+  margin: 0 auto;
 }
