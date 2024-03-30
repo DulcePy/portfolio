@@ -174,16 +174,6 @@ h3 {
   font-family: var(--font-first);
 }
 
-@media (max-width: 500px) {
-  .hero h1 {
-    font-size: 50px !important;
-  }
-
-  .hero p {
-    font-size: 24px;
-  }
-}
-
 @media (max-width: 780px) {
   .display-none {
     display: none;
@@ -209,4 +199,36 @@ h3 {
 .row-content {
   max-width: 500px;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #f9f7fe;
+  padding: 50px;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  background: var(--white-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 50px !important;
+  }
+
+  .hero p {
+    font-size: 24px;
+  }
+
+  footer .email-link {
+    font-size: 14px;
+  }
+}
+
+.bi-cpu {
+  color: white !important;
 }

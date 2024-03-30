@@ -1,6 +1,6 @@
 let nav = document.querySelector("#nav");
 nav.innerHTML = `<div class="container-fluid">
-        <a class="navbar-brand" href="#">LOGO</a>
+        <a class="navbar-brand" href="/index.html"><i class="bi bi-cpu"></i></a>
         <button
           class="navbar-toggler"
           type="button"
